@@ -32,6 +32,7 @@ function! s:h(group, fg, bg, attr)
 endfun
 
 call s:h("Normal" , s:fg , s:bg , "")
+call s:h("Conceal" , s:fg , s:bg , "")
 call s:h("NonText" , s:fg , s:none , "")
 
 call s:h("Cursor" , s:bg , s:fg ,"")
