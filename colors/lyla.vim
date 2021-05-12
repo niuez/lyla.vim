@@ -1,10 +1,23 @@
 set background=dark
-syntax reset
+
+highlight clear
+if exists("syntax_on")
+  syntax reset
+endif
 
 let g:colors_name='lyla'
 let colors_name='lyla'
 
-let s:bg = "#242828"
+function! s:lyla_bg()
+  if g:lyla_bg_is_none == v:true
+    return "None"
+  else
+    return "#242828"
+  endif
+endfun
+
+let s:bg = "None"
+
 let s:fg = "#6F8EB3"
 "let s:fg = "#a4a4a4"
 let s:sky1 = "#bd8840"
