@@ -16,7 +16,7 @@ function! s:lyla_bg()
   endif
 endfun
 
-let s:bg = "None"
+let s:bg = s:lyla_bg()
 
 let s:fg = "#6F8EB3"
 "let s:fg = "#a4a4a4"
@@ -83,11 +83,11 @@ call s:h("SpellLocal", s:yellow, s:none, "")
 call s:h("SpellRare", s:yellow, s:none, "")
 
 "
-"call s:h("StatusLine", s:warm_d, s:azure_dd, "")
+"call s:h("StatusLine", s:bg, s:none, "")
 "call s:h("StatusLineNC", s:azure_dd, s:azure_dd, "")
-"call s:h("TabLine", s:comment_fg, s:cursor_line, "")
-"call s:h("TabLineFill", s:comment_fg, s:cursor_line, "")
-"call s:h("TabLineSel", s:fg, s:bg, "")
+"call s:h("TabLine", s:grey, s:none, "")
+"call s:h("TabLineFill", s:grey, s:none, "")
+"call s:h("TabLineSel", s:grey, s:none, "")
 "
 "call s:h("Visual", "", s:selection, "")
 "call s:h("VisualNOS", "", s:selection, "")
@@ -148,6 +148,7 @@ call s:h("Underlined" , s:sky2 , s:none , "")
 call s:h("Ignore" , s:sky2 , s:none , "")
 call s:h("Error" , s:warning , s:none , "")
 call s:h("Todo" , s:sky2 , s:none , "")
+
 call s:h("LspCxxHlGroupNamespace" , s:sky1 , s:none , "")
 call s:h("LspCxxHlGroupMemberVariable" , s:fg , s:none , "")
 

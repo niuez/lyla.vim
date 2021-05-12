@@ -51,7 +51,7 @@ let s:normal_outer = [s:bg, s:fth1, s:dark_c, s:green_c]
 let s:normal_middle = [s:fg, s:bg, s:light_c, s:med_hi_c]
 let s:normal_inner = [s:fg, s:bg, s:green_c, s:med_lo_c]
 let s:normal_inner_modified = [s:fg, s:bg, s:yellow_c, s:med_lo_c]
-let g:airline#themes#lyla#palette.normal = 
+let g:airline#themes#lyla#palette.normal =
     \ airline#themes#generate_color_map(s:normal_outer, s:normal_middle, s:normal_inner)
 let g:airline#themes#lyla#palette.normal_modified =
     \ airline#themes#generate_color_map(s:normal_outer, s:normal_middle, s:normal_inner_modified)
@@ -61,9 +61,9 @@ let g:airline#themes#lyla#palette.normal_modified =
 let s:insert_outer = [s:bg, s:sky1, s:med_lo_c, s:blue_c]
 let s:insert_middle = s:normal_middle
 let s:insert_inner = [s:fg, s:bg, s:blue_c, s:med_lo_c]
-let g:airline#themes#lyla#palette.insert = 
+let g:airline#themes#lyla#palette.insert =
     \ airline#themes#generate_color_map(s:insert_outer, s:insert_middle, s:insert_inner)
-let g:airline#themes#lyla#palette.insert_modified = 
+let g:airline#themes#lyla#palette.insert_modified =
     \ copy(g:airline#themes#lyla#palette.normal_modified)
 
 
@@ -73,7 +73,7 @@ let s:replace_middle = s:normal_middle
 let s:replace_inner = [s:bg, s:fg, s:red_c, s:med_lo_c]
 let g:airline#themes#lyla#palette.replace =
     \ airline#themes#generate_color_map(s:replace_outer, s:replace_middle, s:replace_inner)
-let g:airline#themes#lyla#palette.replace_modified = 
+let g:airline#themes#lyla#palette.replace_modified =
     \ copy(g:airline#themes#lyla#palette.insert_modified)
 
 
@@ -81,16 +81,16 @@ let g:airline#themes#lyla#palette.replace_modified =
 let s:visual_outer = [s:bg, s:sky2, s:dark_c, s:yellow_c]
 let s:visual_middle = s:normal_middle
 let s:visual_inner = [s:fg, s:bg, s:yellow_c, s:med_lo_c]
-let g:airline#themes#lyla#palette.visual = 
+let g:airline#themes#lyla#palette.visual =
     \ airline#themes#generate_color_map(s:visual_outer, s:visual_middle, s:visual_inner)
-let g:airline#themes#lyla#palette.visual_modified = 
+let g:airline#themes#lyla#palette.visual_modified =
     \ copy(g:airline#themes#lyla#palette.insert_modified)
 
 
 " Inactive window
 let s:inactive = [s:fg, s:bg, s:light_c, s:med_lo_c]
 let s:inactive_modified = [s:fg, '', s:yellow_c, '']
-let g:airline#themes#lyla#palette.inactive = 
+let g:airline#themes#lyla#palette.inactive =
     \ airline#themes#generate_color_map(s:inactive, s:inactive, s:inactive)
-let g:airline#themes#lyla#palette.inactive_modified = 
+let g:airline#themes#lyla#palette.inactive_modified =
     \ airline#themes#generate_color_map(s:inactive, s:inactive, s:inactive_modified)
