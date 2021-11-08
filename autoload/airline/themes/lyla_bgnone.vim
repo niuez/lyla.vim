@@ -58,10 +58,10 @@ endfunction
 
 " Normal mode
 " Array format: [guifg, guibg, ctermfg, ctermbg, opts]
-let s:normal_outer = [s:fth1, s:none, s:dark_c, s:green_c]
-let s:normal_middle = [s:grey, s:none, s:light_c, s:med_hi_c]
-let s:normal_inner = [s:grey, s:none, s:green_c, s:med_lo_c]
-let s:normal_inner_modified = [s:fg, s:none, s:yellow_c, s:med_lo_c]
+let s:normal_outer = [s:fth1, s:none, s:none, s:none]
+let s:normal_middle = [s:grey, s:none, s:green_c, s:none]
+let s:normal_inner = [s:grey, s:none, s:none, s:none]
+let s:normal_inner_modified = [s:fg, s:none, s:none, s:none]
 let g:airline#themes#lyla_bgnone#palette.normal =
     \ s:my_generate_color_map(s:normal_outer, s:normal_middle, s:normal_inner)
 let g:airline#themes#lyla_bgnone#palette.normal_modified =

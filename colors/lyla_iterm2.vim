@@ -5,8 +5,8 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name='lyla'
-let colors_name='lyla'
+let g:colors_name='lyla_iterm2'
+let colors_name='lyla_iterm2'
 
 function! s:lyla_bg()
   if g:lyla_bg_is_none == v:true
@@ -18,13 +18,13 @@ endfun
 
 let s:bg = s:lyla_bg()
 
-let s:fg = "#758db0"
+let s:fg = "#6F8EB3"
 "let s:fg = "#a4a4a4"
-let s:sky1 = "#b58a4c"
-let s:sky2 = "#c37349"
+let s:sky1 = "#bd8840"
+let s:sky2 = "#d06e3e"
 let s:sky3 = "#e9a05a"
 let s:fth1 = "#87bba5"
-let s:fth2 = "#757fbf"
+let s:fth2 = "#737fc4"
 let s:blue = "#e9a05a"
 
 let s:grey = "#6A6868"
