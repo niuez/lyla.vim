@@ -2,6 +2,8 @@
 
 vim colorscheme
 
+nvim-treesitter support
+
 # iterm2
 
 iterm2では色が若干調整されるので, `lyla_iterm2`を利用してください.
